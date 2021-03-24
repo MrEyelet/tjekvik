@@ -1,5 +1,5 @@
 body {
-  background: #F7F8FC;
+  background: #f7f8fc;
 }
 
 .App {
@@ -14,20 +14,23 @@ main {
 .App-header {
   height: 100px;
   width: 100%;
-  background: #30306F;
+  background: #30306f;
 }
 
 .App-box {
   width: 370px;
   height: 430px;
-  background: #30306F;
+  background: #30306f;
   display: flex;
-  float: left;
   flex-direction: column;
   justify-content: center;
   margin: 0 15px;
   border-radius: 5px;
   color: #fff;
+}
+
+.container {
+  display: flex;
 }
 
 .Icon-wrap {
@@ -41,7 +44,6 @@ main {
   align-self: center;
 }
 
-
 footer {
-  clear: both;
+  /* clear: both; */
 }
