@@ -1,61 +1,30 @@
-import logo from './assets/logo.png';
-import checkInIcon from './assets/check-in-icon.png';
-import checkOutIcon from './assets/check-out-icon.png';
-import noAppointmentIcon from './assets/no-appointment-icon.png';
+// import logo from "./assets/logo.png"
+import checkInIcon from "./assets/check-in-icon.svg"
+import checkOutIcon from "./assets/check-out-icon.svg"
+import noAppointmentIcon from "./assets/no-appointment-icon.svg"
 
-import './App.css';
+//Components
+import Header from "./components/Header.js"
+import Intro from "./components/Intro.js"
+import Box from "./components/Box.js"
+import Footer from "./components/Footer.js"
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
-
-      <h1>
-        BMW Here&There
-      </h1>
-
-      <h2>
-        Welcome to the service station
-      </h2>
+      <Header />
+      <Intro />
 
       <main>
-        <div className="App-box">
-          <div className="Icon-wrap">
-            <img src={checkInIcon} />
-          </div>
-
-          <h3>
-            Check in
-          </h3>
-        </div>
-
-        <div className="App-box">
-          <div className="Icon-wrap">
-            <img src={checkOutIcon} />
-          </div>
-
-          <h3>
-            Check out
-          </h3>
-        </div>
-
-        <div className="App-box">
-          <div className="Icon-wrap">
-            <img src={noAppointmentIcon} />
-          </div>
-
-          <h3>
-            Without appointment
-          </h3>
-        </div>
+        <Box icon={checkInIcon} alt="check-in-icon" title="first box title" paragraph="first box paragraph" />
+        <Box icon={checkOutIcon} alt="check-out-icon" title="second box title" paragraph="second box paragraph" />
+        <Box icon={noAppointmentIcon} alt="no-appointment-icon" title="third box title" paragraph="third box paragraph" />
       </main>
 
-      <footer>
-      </footer>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
