@@ -1,6 +1,6 @@
 .box {
-  width: 370px;
-  min-height: 430px;
+  width: 37rem;
+  min-height: 43rem;
   background: $color-main;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
     font-size: 2.4rem;
   }
   &__icon {
-    height: 250px;
+    height: 25rem;
     justify-content: center;
     align-items: middle;
     display: flex;

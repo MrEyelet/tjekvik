@@ -1,0 +1,14 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 26.4rem;
+  height: 7.4rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  border-radius: 7px;
+  color: $color-white;
+  background-color: $color-main;
+  text-decoration: none;
+}
