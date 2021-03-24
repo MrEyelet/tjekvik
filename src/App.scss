@@ -10,21 +10,3 @@
 @import "scss/components/intro";
 @import "scss/components/box";
 @import "scss/components/footer";
-body {
-  background: #f7f8fc;
-}
-
-.Icon-wrap {
-  height: 250px;
-  justify-content: center;
-  align-items: middle;
-  display: flex;
-}
-
-.Icon-wrap img {
-  align-self: center;
-}
-
-footer {
-  /* clear: both; */
-}

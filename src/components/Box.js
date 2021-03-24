@@ -3,7 +3,7 @@ import React from "react"
 function Intro({ title, paragraph, icon, alt }) {
   return (
     <div className="box">
-      <div className="Icon-wrap">
+      <div className="box__icon">
         <img src={icon} alt={alt} />
       </div>
 
