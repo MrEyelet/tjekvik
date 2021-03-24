@@ -10,14 +10,14 @@ import Intro from "./components/Intro.js"
 import Home from "./components/Home.js"
 import SelectLang from "./components/SelectLang.js"
 import Footer from "./components/Footer.js"
-import "./App.css"
+import "./App.scss"
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Intro />
+        <Intro title="Terminal Name" subtitle="Welcome to the service station" />
         <Switch>
           <main>
             <Route path="/" exact>
@@ -27,8 +27,8 @@ function App() {
               <SelectLang />
             </Route>
           </main>
-          <Footer />
         </Switch>
+        <Footer />
       </div>
     </BrowserRouter>
   )

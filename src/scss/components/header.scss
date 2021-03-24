@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  background-color: $color-main;
+  &__wrapper {
+    @include wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__cta {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__cta-text {
+    color: $color-white;
+    text-decoration: none;
+  }
+}

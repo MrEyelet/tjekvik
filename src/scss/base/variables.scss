@@ -1,0 +1,29 @@
+//colors
+$color-main: #30306f;
+$color-white: #ffffff;
+$color-black: #000000;
+
+//layout
+$wrapper-width: 120rem;
+$wrapper-padding: 2rem;
+$vw-base: 1600;
+
+//font styles
+$base-font: "inter", sans-serif;
+$base-font-weight: 400;
+$base-font-size: 2.4rem;
+
+//z-index
+$over-all: 99999999;
+$over-content: 100;
+$below-content: -100;
+
+//bp
+$screen-mobile-sm: 320px;
+$screen-mobile: 375px;
+$screen-mobile-lg: 480px;
+$screen-phablet: 600px;
+$screen-portrait: 768px;
+$screen-tablet: 1024px;
+$screen-laptop: 1366px;
+$screen-xxl: 1920px;

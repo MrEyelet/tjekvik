@@ -8,9 +8,9 @@ import Box from "./Box.js"
 function Home() {
   return (
     <div className="container">
-      <Box icon={checkInIcon} alt="check-in-icon" title="first box title" paragraph="first box paragraph" />
-      <Box icon={checkOutIcon} alt="check-out-icon" title="second box title" paragraph="second box paragraph" />
-      <Box icon={noAppointmentIcon} alt="no-appointment-icon" title="third box title" paragraph="third box paragraph" />
+      <Box icon={checkInIcon} alt="check-in-icon" title="check in" paragraph="Bring The Vehicle" />
+      <Box icon={checkOutIcon} alt="check-out-icon" title="check out" paragraph="Get The Vehicle" />
+      <Box icon={noAppointmentIcon} alt="no-appointment-icon" title="without appointment" paragraph="Brinf The Vehicle" />
     </div>
   )
 }

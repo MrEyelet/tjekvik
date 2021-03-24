@@ -6,21 +6,21 @@ import support from "../assets/support.svg"
 
 function Header() {
   return (
-    <header className="App-header">
-      <div className="App-header__wrapper">
+    <header className="header">
+      <div className="header__wrapper">
         <Link to="/" className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" />
         </Link>
         <div className="header__cta">
-          <Link to="/select-language">
-            <img src={support} alt="" />
-            <p>elo</p>
-          </Link>
+          <img src={support} alt="support-icon" />
+          <p className="header__cta-text">Need assistance ?</p>
         </div>
       </div>
       <div className="lang">
-        <img src={flag} alt="" />
-        <span>En</span>
+        <Link to="/select-language">
+          <img src={flag} alt="flag-icon" />
+          <span className="lang__suffix">En</span>
+        </Link>
       </div>
     </header>
   )

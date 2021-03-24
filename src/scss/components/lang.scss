@@ -1,0 +1,16 @@
+.lang {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  right: 2rem;
+  z-index: $over-content;
+  &__suffix {
+    color: $color-white;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  a {
+    display: flex;
+    align-items: center;
+  }
+}

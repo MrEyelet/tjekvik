@@ -2,13 +2,13 @@ import React from "react"
 
 function Intro({ title, paragraph, icon, alt }) {
   return (
-    <div className="App-box">
+    <div className="box">
       <div className="Icon-wrap">
         <img src={icon} alt={alt} />
       </div>
 
-      <h3>{title}</h3>
-      <p>{paragraph}</p>
+      <h3 className="box__title">{title}</h3>
+      <p className="box__desc">{paragraph}</p>
     </div>
   )
 }

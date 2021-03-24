@@ -1,10 +1,10 @@
 import React from "react"
 
-function Intro() {
+function Intro({ title, subtitle }) {
   return (
-    <section className="App-intro">
-      <h1>Elo</h1>
-      <h2>elo2</h2>
+    <section className="intro">
+      <h1 className="intro__title">{title}</h1>
+      <h2 className="intro__subtitle">{subtitle}</h2>
     </section>
   )
 }

@@ -1,0 +1,10 @@
+.footer {
+  &__wrapper {
+    @include wrapper;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+}

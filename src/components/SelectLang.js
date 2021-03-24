@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 //Components
 import Box from "./Box.js"
@@ -6,7 +7,9 @@ import Box from "./Box.js"
 function SelectLang() {
   return (
     <>
-      <Box />
+      <Link to="/">
+        <Box />
+      </Link>
     </>
   )
 }
