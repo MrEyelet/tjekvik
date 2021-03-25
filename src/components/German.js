@@ -1,15 +1,15 @@
 import React from "react"
-//Components
+
 import Intro from "./Intro.js"
 import Container from "./Container.js"
 
-function Home() {
+function German() {
   return (
     <main className="home">
-      <Intro title="Terminal Name" subtitle="Welcome to the service station" />
+      <Intro title="Terminal Name" subtitle="Willkommen an der Service Station" />
       <Container />
     </main>
   )
 }
 
-export default Home
+export default German

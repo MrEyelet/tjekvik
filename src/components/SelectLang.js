@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-
+//Graphics
 import england from "../assets/england.svg"
 import german from "../assets/german.svg"
 import france from "../assets/france.svg"
@@ -14,12 +14,11 @@ function SelectLang() {
   return (
     <main className="subpage">
       <Intro title="Select Language" />
-
       <div className="container">
         <Link className="link" to="/">
           <Box icon={england} alt="england-flag" title="English" paragraph="English" />
         </Link>
-        <Link className="link" to="/">
+        <Link className="link" to="/german">
           <Box icon={german} alt="german-flag" title="Deutsch" paragraph="German" />
         </Link>
         <Link className="link" to="/">

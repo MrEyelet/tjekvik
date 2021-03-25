@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+//Graphics
 import logo from "../assets/logo.svg"
 import flag from "../assets/flag.svg"
 import support from "../assets/support.svg"

@@ -1,10 +1,10 @@
 import React from "react"
 
-function Intro({ title, subtitle }) {
+function Intro(props) {
   return (
     <section className="intro">
-      <h1 className="intro__title">{title}</h1>
-      <h2 className="intro__subtitle">{subtitle}</h2>
+      <h1 className="intro__title">{props.title}</h1>
+      <h2 className="intro__subtitle">{props.subtitle}</h2>
     </section>
   )
 }
