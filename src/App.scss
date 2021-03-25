@@ -1,10 +1,14 @@
+/*Mixins*/
+@import "scss/mixins/wrapper";
+@import "scss/mixins/breakpoints";
+/*Functions*/
+@import "scss/functions/vw";
 /*Common*/
 @import "scss/base/variables";
 @import "scss/base/common";
-/*Mixins*/
-@import "scss/mixins/wrapper";
 /*Components*/
 @import "scss/components/header";
+@import "scss/components/logo";
 @import "scss/components/lang";
 @import "scss/components/container";
 @import "scss/components/intro";

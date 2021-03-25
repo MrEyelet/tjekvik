@@ -5,6 +5,10 @@
   transform: translatey(-50%);
   right: 3rem;
   z-index: $over-content;
+  &__icon {
+    width: 5.4rem;
+    text-align: center;
+  }
   &__suffix {
     color: $color-white;
     font-size: 2.4rem;

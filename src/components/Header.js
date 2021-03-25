@@ -12,13 +12,17 @@ function Header() {
           <img src={logo} alt="logo" />
         </Link>
         <div className="header__cta">
-          <img src={support} alt="support-icon" />
+          <div className="header__cta-icon">
+            <img src={support} alt="support-icon" />
+          </div>
           <p className="header__cta-text">Need assistance ?</p>
         </div>
       </div>
       <div className="lang">
         <Link to="/select-language">
-          <img src={flag} alt="flag-icon" />
+          <div className="lang__icon">
+            <img src={flag} alt="flag-icon" />
+          </div>
           <span className="lang__suffix">En</span>
         </Link>
       </div>

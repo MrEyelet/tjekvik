@@ -1,4 +1,4 @@
-<svg id="announcement_black_36dp" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+<svg id="announcement_black_36dp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
   <path id="Path_1" data-name="Path 1" d="M0,0H43V43H0Z" fill="none"/>
   <path id="Path_2" data-name="Path 2" d="M34.25,2H5.583A3.594,3.594,0,0,0,2,5.583v32.25l7.167-7.167H34.25a3.594,3.594,0,0,0,3.583-3.583V5.583A3.594,3.594,0,0,0,34.25,2Zm0,25.083H7.68l-2.1,2.1V5.583H34.25ZM18.125,7.375h3.583v10.75H18.125Zm0,14.333h3.583v3.583H18.125Z" transform="translate(1.583 1.583)" fill="#ec2727"/>
 </svg>
