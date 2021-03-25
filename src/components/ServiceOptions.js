@@ -7,20 +7,20 @@ import noAppointmentIcon from "../assets/no-appointment-icon.svg"
 //Components
 import Box from "./Box.js"
 
-function Container() {
+function ServiceOptions(props) {
   return (
-    <div className="container">
+    <>
       <Link className="link" to="/">
-        <Box icon={checkInIcon} alt="check-in-icon" title="check in" paragraph="Fahrzeug bringen" />
+        <Box icon={checkInIcon} alt="check-in-icon" title="check in" paragraph={props.checkIn} />
       </Link>
       <Link className="link" to="/">
-        <Box icon={checkOutIcon} alt="check-out-icon" title="check out" paragraph="Fahrzeug holen" />
+        <Box icon={checkOutIcon} alt="check-out-icon" title="check out" paragraph={props.checkOut} />
       </Link>
       <Link className="link" to="/">
-        <Box icon={noAppointmentIcon} alt="no-appointment-icon" title="ohne termin" paragraph="Fahrzeug bringen" />
+        <Box icon={noAppointmentIcon} alt="no-appointment-icon" title={props.title} paragraph={props.withoutCheck} />
       </Link>
-    </div>
+    </>
   )
 }
 
-export default Container
+export default ServiceOptions
