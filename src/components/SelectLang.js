@@ -16,16 +16,16 @@ function SelectLang() {
       <Intro title="Select Language" />
 
       <div className="container">
-        <Link className="select-lang" to="/">
+        <Link className="select" to="/">
           <Box icon={england} alt="england-flag" title="English" paragraph="English" />
         </Link>
-        <Link className="select-lang" to="/">
+        <Link className="select" to="/">
           <Box icon={german} alt="german-flag" title="Deutsch" paragraph="German" />
         </Link>
-        <Link className="select-lang" to="/">
+        <Link className="select" to="/">
           <Box icon={france} alt="england-flag" title="Français" paragraph="French" />
         </Link>
-        <Link className="select-lang" to="/">
+        <Link className="select" to="/">
           <Box icon={spain} alt="england-flag" title="Español" paragraph="Spanish" />
         </Link>
       </div>
