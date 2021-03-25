@@ -24,7 +24,7 @@ function App() {
             <SelectLang />
           </Route>
         </Switch>
-        <Footer />
+        <Footer info="Attention! Please remove all valuables from your vehicle before you start handing them in." />
       </div>
     </BrowserRouter>
   )

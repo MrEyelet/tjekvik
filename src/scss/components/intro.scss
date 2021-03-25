@@ -5,10 +5,26 @@
     font-size: 8.5rem;
     margin: 2rem auto 0.5rem;
     line-height: 10rem;
+    @include portrait {
+      font-size: 6.5rem;
+      line-height: 8rem;
+    }
+    @include phablet {
+      font-size: 3.5rem;
+      line-height: 5.5rem;
+    }
   }
   &__subtitle {
     font-size: 4.5rem;
-    margin: 0rem auto 5.3rem;
+    margin: 0rem auto 1.3rem;
     line-height: 5.5rem;
+    @include portrait {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    @include phablet {
+      font-size: 1.8rem;
+      line-ehight: 2.8rem;
+    }
   }
 }

@@ -14,7 +14,7 @@ function Footer(props) {
         <div className="footer__icon">
           <img src={attention} alt="attention-icon" />
         </div>
-        <p className="footer__info">Attention! Please remove all valuables from your vehicle before you start handing them in.</p>
+        <p className="footer__info">{props.info}</p>
       </div>
     </footer>
   )

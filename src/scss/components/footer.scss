@@ -3,7 +3,7 @@
     @include wrapper;
     display: flex;
     text-align: center;
-    margin-top: 5rem;
+    margin: 5rem 0 2rem;
   }
   &__icon {
     width: 4.3rem;
@@ -12,5 +12,8 @@
     margin: 0;
     font-size: 2.7rem;
     font-weight: 600;
+    @include portrait {
+      font-size: 2rem;
+    }
   }
 }

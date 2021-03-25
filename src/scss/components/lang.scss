@@ -5,14 +5,30 @@
   transform: translatey(-50%);
   right: 3rem;
   z-index: $over-content;
+  @include portrait {
+    position: relative;
+    top: unset;
+    right: 2rem;
+    transform: translateY(0);
+    margin-left: auto;
+  }
+  @include phablet {
+    width: 3.5rem;
+  }
   &__icon {
     width: 5.4rem;
     text-align: center;
+    @include phablet {
+      width: 3.5rem;
+    }
   }
   &__suffix {
     color: $color-white;
     font-size: 2.4rem;
     font-weight: 700;
+    @include phablet {
+      display: none;
+    }
   }
   a {
     display: flex;

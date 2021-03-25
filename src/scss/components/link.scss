@@ -1,6 +1,10 @@
-.select {
+.link {
   flex: 1 1 calc(33.33% - 4rem);
   min-height: 43rem;
+  padding-top: 4rem;
+  @include phablet {
+    flex: 1 1 100%;
+  }
   .subpage & {
     flex: 1 1 calc(25% - 4rem);
     min-height: 31rem;
