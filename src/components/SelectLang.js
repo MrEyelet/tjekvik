@@ -7,23 +7,32 @@ import france from "../assets/france.svg"
 import spain from "../assets/spain.svg"
 
 //Components
+import Intro from "./Intro.js"
 import Box from "./Box.js"
 
 function SelectLang() {
   return (
-    <>
+    <main className="subpage">
+      <Intro title="Select Language" />
+
       <div className="container">
-        <Link className="test" to="/">
+        <Link className="select-lang" to="/">
           <Box icon={england} alt="england-flag" title="English" paragraph="English" />
+        </Link>
+        <Link className="select-lang" to="/">
           <Box icon={german} alt="german-flag" title="Deutsch" paragraph="German" />
+        </Link>
+        <Link className="select-lang" to="/">
           <Box icon={france} alt="england-flag" title="Français" paragraph="French" />
+        </Link>
+        <Link className="select-lang" to="/">
           <Box icon={spain} alt="england-flag" title="Español" paragraph="Spanish" />
         </Link>
       </div>
       <Link className="btn" to="/">
         Back
       </Link>
-    </>
+    </main>
   )
 }
 

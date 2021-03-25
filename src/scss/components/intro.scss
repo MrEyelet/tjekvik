@@ -3,10 +3,12 @@
   text-align: center;
   &__title {
     font-size: 8.5rem;
-    font-weight: 800;
+    margin: 2rem auto 0.5rem;
+    line-height: 10rem;
   }
   &__subtitle {
     font-size: 4.5rem;
-    font-weight: 500;
+    margin: 0rem auto 5.3rem;
+    line-height: 5.5rem;
   }
 }

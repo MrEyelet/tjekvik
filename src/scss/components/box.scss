@@ -1,27 +1,31 @@
 .box {
-  width: 37rem;
+  flex: 1 1 calc(33.33% - 4rem);
   min-height: 43rem;
   background: $color-main;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 15px;
+  margin: 0 2rem;
   border-radius: 5px;
   color: $color-white;
   text-align: center;
+  .subpage & {
+    flex: 1 1 calc(25% - 4rem);
+  }
   &__title {
+    margin: 3rem auto 1rem;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
   }
   &__desc {
+    margin: 0 0 0 0;
     font-size: 2.4rem;
   }
   &__icon {
-    height: 25rem;
-    justify-content: center;
-    align-items: middle;
     display: flex;
+    justify-content: center;
+    height: 18.5rem;
     img {
       align-self: center;
     }

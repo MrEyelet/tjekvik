@@ -6,7 +6,6 @@ import React from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 //Components
 import Header from "./components/Header.js"
-import Intro from "./components/Intro.js"
 import Home from "./components/Home.js"
 import SelectLang from "./components/SelectLang.js"
 import Footer from "./components/Footer.js"
@@ -17,16 +16,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Intro title="Terminal Name" subtitle="Welcome to the service station" />
         <Switch>
-          <main>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/select-language">
-              <SelectLang />
-            </Route>
-          </main>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/select-language">
+            <SelectLang />
+          </Route>
         </Switch>
         <Footer />
       </div>

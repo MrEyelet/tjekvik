@@ -1,8 +1,9 @@
 .lang {
+  width: 10rem;
   position: absolute;
   top: 50%;
   transform: translatey(-50%);
-  right: 2rem;
+  right: 3rem;
   z-index: $over-content;
   &__suffix {
     color: $color-white;
@@ -11,6 +12,7 @@
   }
   a {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 }
