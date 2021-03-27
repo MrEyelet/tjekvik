@@ -1,5 +1,4 @@
 .link {
-  // flex: 1 1 calc(33.33% - 4rem);
   width: 37rem;
   min-height: 46.5rem;
   padding-top: 3.5rem;
@@ -28,9 +27,28 @@
     }
   }
   .select-lang-en & {
-    // flex: 1 1 calc(25% - 4rem);
-    max-width: 27.5rem;
-    width: 100%;
-    min-height: 31rem;
+    width: 27.5rem;
+    min-height: 34rem;
+    &:nth-child(3n + 3) {
+      margin-right: 4rem;
+    }
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+    @include portrait {
+      width: calc(50% - 1rem);
+      &:nth-child(3n + 3) {
+        margin-right: 2rem;
+      }
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+    }
+    @include phablet {
+      width: 100%;
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
+    }
   }
 }

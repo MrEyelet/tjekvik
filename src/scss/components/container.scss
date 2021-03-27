@@ -7,4 +7,7 @@
   @include phablet {
     padding: 0 2rem;
   }
+  .select-lang-en & {
+    padding: 0 3.8rem;
+  }
 }
