@@ -1,6 +1,6 @@
 .box {
   height: 100%;
-  background: $color-main;
+  // background: $color-main;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,9 +9,9 @@
   border-radius: 5px;
   color: $color-white;
   text-align: center;
-  &.active {
-    background-color: tomato;
-  }
+  // &.active {
+  //   background-color: tomato;
+  // }
   &__title {
     margin: 2.5rem auto 1rem;
     font-size: 4rem;

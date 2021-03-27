@@ -28,6 +28,7 @@
       font-size: 1.8rem;
     }
     @include phablet {
+      width: auto;
       margin-right: 2rem;
     }
   }

@@ -8,7 +8,14 @@
   margin: 7.2rem auto 0;
   padding: 0 2rem;
   border-radius: 7px;
+  border: 2px solid $color-main;
   color: $color-white;
   background-color: $color-main;
   text-decoration: none;
+  transition: 0.25s ease-out;
+
+  &:hover {
+    background-color: transparent;
+    color: $color-main;
+  }
 }
