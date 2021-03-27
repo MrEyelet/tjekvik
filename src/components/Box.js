@@ -1,6 +1,6 @@
 import React from "react"
 
-function Intro(props) {
+function Box(props) {
   return (
     <div className="box">
       <div className="box__icon">
@@ -13,4 +13,4 @@ function Intro(props) {
   )
 }
 
-export default Intro
+export default Box

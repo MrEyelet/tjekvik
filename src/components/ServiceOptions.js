@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
+//Components
+import Box from "./Box.js"
 //Graphics
 import checkInIcon from "../assets/check-in-icon.svg"
 import checkOutIcon from "../assets/check-out-icon.svg"
 import noAppointmentIcon from "../assets/no-appointment-icon.svg"
-//Components
-import Box from "./Box.js"
 
 function ServiceOptions(props) {
   return (

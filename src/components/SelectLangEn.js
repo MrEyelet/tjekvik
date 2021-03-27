@@ -5,12 +5,14 @@ import Header from "./Header.js"
 import Intro from "./Intro.js"
 import LanguageOptions from "./LanguageOptions"
 import Btn from "./Btn"
+//Graphics
+import en from "../assets/england.svg"
 
-function SelectLang() {
+function SelectLangEn() {
   return (
     <>
-      <Header />
-      <main className="subpage">
+      <Header language="en" cta="Need assistance" flag={en} />
+      <main className="select-lang-en">
         <Intro title="Select Language" />
         <div className="container">
           <LanguageOptions />
@@ -21,4 +23,4 @@ function SelectLang() {
   )
 }
 
-export default SelectLang
+export default SelectLangEn

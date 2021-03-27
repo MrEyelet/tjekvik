@@ -10,15 +10,17 @@
   border-radius: 5px;
   color: $color-white;
   text-align: center;
+  &.active {
+    background-color: tomato;
+  }
   &__title {
     margin: 3rem auto 1rem;
     font-size: 4rem;
-    font-weight: 600;
     text-transform: uppercase;
     @include portrait {
       font-size: 3rem;
     }
-    .subpage & {
+    .select-lang-en & {
       margin: 0;
     }
   }

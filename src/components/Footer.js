@@ -1,5 +1,4 @@
 import React from "react"
-import { withRouter } from "react-router-dom"
 import attention from "../assets/attention.svg"
 
 function Footer(props) {

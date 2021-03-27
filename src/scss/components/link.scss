@@ -1,13 +1,17 @@
 .link {
   flex: 1 1 calc(33.33% - 4rem);
-  min-height: 43rem;
-  padding-top: 4rem;
+  // max-width: 37rem;
+  // width: 100%;
+  min-height: 46.5rem;
+  padding-top: 3.5rem;
   text-decoration: none;
   @include phablet {
     flex: 1 1 100%;
   }
-  .subpage & {
-    flex: 1 1 calc(25% - 4rem);
+  .select-lang-en & {
+    // flex: 1 1 calc(25% - 4rem);
+    max-width: 27.5rem;
+    width: 100%;
     min-height: 31rem;
   }
 }

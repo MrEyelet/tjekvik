@@ -1,12 +1,14 @@
 .footer {
   &__wrapper {
     @include wrapper;
+    padding: 0 3rem;
     display: flex;
     text-align: center;
     margin: 5rem auto 2rem;
   }
   &__icon {
     width: 4.3rem;
+    margin-right: 1.5rem;
   }
   &__info {
     margin: 0;
