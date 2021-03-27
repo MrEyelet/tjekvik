@@ -2,38 +2,31 @@
   @include wrapper;
   text-align: center;
   &__title {
-    height: 10rem;
     position: relative;
+    transform: translatey(2rem);
     font-size: 8.5rem;
     margin: 2rem auto 0.5rem;
     line-height: 10rem;
-    overflow: hidden;
+    opacity: 0;
+    will-change: transform;
     @include portrait {
-      height: 8rem;
       font-size: 6.5rem;
       line-height: 8rem;
     }
     @include phablet {
-      height: 6rem;
       font-size: 3.5rem;
       line-height: 5.5rem;
     }
   }
-  &__title-inner {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    will-change: transform;
-  }
   &__subtitle {
-    height: 5rem;
     font-size: 4.5rem;
     margin: 0rem auto 1.3rem;
     line-height: 5.5rem;
     position: relative;
-    overflow: hidden;
+    transform: translatey(2rem);
+    opacity: 0;
+    will-change: transform;
+
     @include portrait {
       font-size: 3rem;
       line-height: 4rem;
@@ -42,13 +35,5 @@
       font-size: 1.8rem;
       line-ehight: 2.8rem;
     }
-  }
-  &__subtitle-inner {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    will-change: transform;
   }
 }
