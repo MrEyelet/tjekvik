@@ -3,11 +3,6 @@ import { withRouter } from "react-router-dom"
 import attention from "../assets/attention.svg"
 
 function Footer(props) {
-  const { location } = props
-  if (location.pathname.match(/select-language/)) {
-    return null
-  }
-
   return (
     <footer className="footer">
       <div className="footer__wrapper">
@@ -20,4 +15,4 @@ function Footer(props) {
   )
 }
 
-export default withRouter(Footer)
+export default Footer

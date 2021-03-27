@@ -1,21 +1,23 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
 //Components
+import Header from "./Header.js"
 import Intro from "./Intro.js"
 import LanguageOptions from "./LanguageOptions"
+import Btn from "./Btn"
 
 function SelectLang() {
   return (
-    <main className="subpage">
-      <Intro title="Select Language" />
-      <div className="container">
-        <LanguageOptions />
-      </div>
-      <Link className="btn" to="/">
-        Back
-      </Link>
-    </main>
+    <>
+      <Header />
+      <main className="subpage">
+        <Intro title="Select Language" />
+        <div className="container">
+          <LanguageOptions />
+        </div>
+        <Btn />
+      </main>
+    </>
   )
 }
 

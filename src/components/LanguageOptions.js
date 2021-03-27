@@ -15,7 +15,7 @@ function LanguageOptions() {
       <Link className="link" to="/">
         <Box icon={england} alt="england-flag" title="English" paragraph="English" />
       </Link>
-      <Link className="link" to="/german">
+      <Link className="link" to="/panel-german">
         <Box icon={german} alt="german-flag" title="Deutsch" paragraph="German" />
       </Link>
       <Link className="link" to="/">

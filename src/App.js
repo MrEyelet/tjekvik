@@ -5,30 +5,20 @@
 import React, { useState } from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 //Components
-import Header from "./components/Header.js"
 import Home from "./components/Home.js"
-import German from "./components/German.js"
+import PanelGerman from "./components/PanelGerman.js"
 import SelectLang from "./components/SelectLang.js"
-import Footer from "./components/Footer.js"
 import "./App.scss"
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/german">
-            <German />
-          </Route>
-          <Route path="/select-language">
-            <SelectLang />
-          </Route>
+          <Route path="/" exact component={Home} />
+          <Route path="/panel-german" component={PanelGerman} />
+          <Route path="/select-language" component={SelectLang} />
         </Switch>
-        <Footer info="Attention! Please remove all valuables from your vehicle before you start handing them in." />
       </div>
     </BrowserRouter>
   )
