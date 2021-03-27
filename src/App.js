@@ -10,19 +10,22 @@ import "./App.scss"
 function App() {
   return (
     <BrowserRouter>
-      {/* <div className="App"> */}
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/panel-german">
-          <PanelGerman />
-        </Route>
-        <Route path="/select-lang-en">
-          <SelectLangEn />
-        </Route>
-      </Switch>
-      {/* </div> */}
+      <div className="App">
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/panel-german">
+            <PanelGerman />
+          </Route>
+          <Route path="/select-lang-en">
+            <SelectLangEn />
+          </Route>
+          <Route path="/select-lang-de">
+            <SelectLangDe />
+          </Route>
+        </Switch>
+      </div>
     </BrowserRouter>
   )
 }

@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
+import gsap from "gsap"
 //Components
 import Logo from "./Logo.js"
+
 //Graphics
 import support from "../assets/support.svg"
 
@@ -12,8 +14,12 @@ function Header(props) {
     body.className = ""
     body.classList.add(suffix)
   }
+  // useEffect(() => {
+  //   const tl = gsap.timeline({ defaults: { ease: "Power3.inOut" } })
+  //   tl.from(".gsap-appear-header", { duration: 0.75, opacity: 0, y: "-20px" })
+  // }, [])
   return (
-    <header className="header">
+    <header className="header gsap-appear-header">
       <div className="header__wrapper">
         <Logo />
         <div className="header__cta">

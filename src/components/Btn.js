@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-function Btn() {
+function Btn(props) {
   return (
     <Link className="btn" to="/">
-      Back
+      {props.text}
     </Link>
   )
 }

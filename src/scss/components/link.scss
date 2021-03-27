@@ -6,6 +6,8 @@
   position: relative;
   text-decoration: none;
   overflow: hidden;
+  transform: translateX(-2rem);
+  opacity: 0;
   &::before {
     content: "";
     width: 100%;
@@ -14,12 +16,15 @@
     top: 0;
     left: 0;
     background: $color-main;
+    border-radius: 7px;
     z-index: $below-content;
     transition: 0.35s transform ease-out;
+    transform-origin: right;
   }
-  &:hover {
+  &:hover,
+  &.is-active {
     &::before {
-      transform: translateX(100%);
+      transform: scaleX(0);
     }
     .box__title,
     .box__desc {
@@ -30,6 +35,9 @@
       transform: rotateY(180deg);
     }
   }
+  // &.is-active {
+  //   pointer-events: none;
+  // }
   &:nth-child(3n + 3) {
     margin-right: 0;
   }
@@ -37,7 +45,6 @@
     width: calc(50% - 1rem);
     min-height: 30rem;
     margin-right: 2rem;
-    padding-top: 2rem;
     &:nth-child(3n + 3) {
       margin-right: 2rem;
     }
@@ -54,7 +61,7 @@
   }
   .select-lang-en & {
     width: 27.5rem;
-    min-height: 34rem;
+    min-height: 31rem;
     &:nth-child(3n + 3) {
       margin-right: 4rem;
     }

@@ -14,10 +14,8 @@ function SelectLangDe() {
       <Header language="de" cta="brauche Hilfe" flag={de} />
       <main className="select-lang-de">
         <Intro title="Deutsch" />
-        <div className="container">
-          <LanguageOptions />
-        </div>
-        <Btn />
+        <LanguageOptions />
+        <Btn text="deutsch" />
       </main>
     </>
   )

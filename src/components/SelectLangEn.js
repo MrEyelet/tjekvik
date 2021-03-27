@@ -14,10 +14,8 @@ function SelectLangEn() {
       <Header language="en" cta="Need assistance" flag={en} />
       <main className="select-lang-en">
         <Intro title="Select Language" />
-        <div className="container">
-          <LanguageOptions />
-        </div>
-        <Btn />
+        <LanguageOptions />
+        <Btn text="english" />
       </main>
     </>
   )

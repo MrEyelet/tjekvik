@@ -13,9 +13,7 @@ function Home() {
       <Header language="en" cta="Need assistance" flag={en} />
       <main className="english">
         <Intro title="Terminal Name" subtitle="Welcome to the service station" />
-        <div className="container">
-          <ServiceOptions title="without appointment" checkIn="Bring The Vehicle" checkOut="Get The Vehicle" withoutCheck="Bring the vehicle" />
-        </div>
+        <ServiceOptions title="without appointment" checkIn="Bring The Vehicle" checkOut="Get The Vehicle" withoutCheck="Bring the vehicle" />
       </main>
       <Footer info="Attention! Please remove all valuables from your vehicle before you start handing them in." />
     </>

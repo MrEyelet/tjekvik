@@ -13,9 +13,7 @@ function PanelGerman() {
       <Header language="de" cta="Brauche Hilfe" flag={de} />
       <main className="german">
         <Intro title="Terminal Name" subtitle="Willkommen an der Service Station" />
-        <div className="container">
-          <ServiceOptions title="Ohne termin" checkIn="Fahrzeug bringen" checkOut="Fahrzeug holen" withoutCheck="Fahrzeug bringen" />
-        </div>
+        <ServiceOptions title="Ohne termin" checkIn="Fahrzeug bringen" checkOut="Fahrzeug holen" withoutCheck="Fahrzeug bringen" />
       </main>
       <Footer info="Achtung! Bitte entnehmen Sie alle Wertgegenstände aus ihrem Fahrzeug, bevor Sie mit der Abgabe beginnen." />
     </>
