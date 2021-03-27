@@ -5,10 +5,17 @@
     display: flex;
     text-align: center;
     margin: 5rem auto 2rem;
+    @include phablet {
+      flex-direction: column;
+      justify-contnet: center;
+    }
   }
   &__icon {
     width: 4.3rem;
     margin-right: 1.5rem;
+    @include phablet {
+      margin: 0 auto;
+    }
   }
   &__info {
     margin: 0;

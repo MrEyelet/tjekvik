@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 2rem;
   padding: 2rem;
   border: 7px solid $color-main;
   border-radius: 5px;
@@ -14,11 +13,11 @@
     background-color: tomato;
   }
   &__title {
-    margin: 3rem auto 1rem;
+    margin: 2.5rem auto 1rem;
     font-size: 4rem;
     text-transform: uppercase;
     @include portrait {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .select-lang-en & {
       margin: 0;
@@ -28,7 +27,7 @@
     margin: 0 0 0 0;
     font-size: 2.4rem;
     @include portrait {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
   &__icon {
@@ -39,6 +38,7 @@
     margin: 0 auto;
     @include portrait {
       width: 8.5rem;
+      height: 10rem;
     }
     img {
       align-self: center;

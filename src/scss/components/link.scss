@@ -1,12 +1,31 @@
 .link {
-  flex: 1 1 calc(33.33% - 4rem);
-  // max-width: 37rem;
-  // width: 100%;
+  // flex: 1 1 calc(33.33% - 4rem);
+  width: 37rem;
   min-height: 46.5rem;
   padding-top: 3.5rem;
+  margin-right: 4rem;
   text-decoration: none;
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  @include portrait {
+    width: calc(50% - 1rem);
+    min-height: 30rem;
+    margin-right: 2rem;
+    padding-top: 2rem;
+    &:nth-child(3n + 3) {
+      margin-right: 2rem;
+    }
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+  }
   @include phablet {
-    flex: 1 1 100%;
+    width: 100%;
+    margin-right: 0;
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
   }
   .select-lang-en & {
     // flex: 1 1 calc(25% - 4rem);
