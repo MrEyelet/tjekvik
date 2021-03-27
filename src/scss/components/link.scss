@@ -25,6 +25,10 @@
     .box__desc {
       color: $color-main;
     }
+    .box__icon {
+      color: $color-main;
+      transform: rotateY(180deg);
+    }
   }
   &:nth-child(3n + 3) {
     margin-right: 0;

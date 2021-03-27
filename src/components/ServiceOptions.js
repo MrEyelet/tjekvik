@@ -11,7 +11,7 @@ function ServiceOptions(props) {
   return (
     <>
       <Link className="link" to="/">
-        <Box icon={<CheckInIcon />} alt="check-in-icon" title="check in" />
+        <Box icon={<CheckInIcon />} alt="check-in-icon" title="check in" paragraph={props.checkIn} />
       </Link>
       <Link className="link" to="/">
         <Box icon={<CheckOutIcon />} alt="check-out-icon" title="check out" paragraph={props.checkOut} />
