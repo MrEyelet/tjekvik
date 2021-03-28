@@ -5,12 +5,12 @@ import Intro from "./Intro.js"
 import ServiceOptions from "./ServiceOptions.js"
 import Footer from "./Footer.js"
 //Graphics
-import de from "../assets/german.svg"
+import { ReactComponent as German } from "../assets/german.svg"
 
 function PanelGerman() {
   return (
     <>
-      <Header language="de" cta="Brauche Hilfe" flag={de} />
+      <Header language="de" cta="Brauche Hilfe" flag={<German />} />
       <main className="german">
         <Intro title="Terminal Name" subtitle="Willkommen an der Service Station" />
         <ServiceOptions title="Ohne termin" checkIn="Fahrzeug bringen" checkOut="Fahrzeug holen" withoutCheck="Fahrzeug bringen" />

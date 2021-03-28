@@ -1,0 +1,13 @@
+@mixin hvr-state {
+  &::before {
+    transform: scaleX(0);
+  }
+  .box__title,
+  .box__desc {
+    color: $color-main;
+  }
+  .box__icon {
+    color: $color-main;
+    transform: rotateY(180deg);
+  }
+}

@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 //Components
 import Home from "./components/Home.js"
 import PanelGerman from "./components/PanelGerman.js"
-import SelectLangEn from "./components/SelectLangEn.js"
-import SelectLangDe from "./components/SelectLangDe.js"
+import PanelFrance from "./components/PanelFrance.js"
+import SelectLang from "./components/SelectLang.js"
 import "./App.scss"
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
           <Route path="/panel-german">
             <PanelGerman />
           </Route>
-          <Route path="/select-lang-en">
-            <SelectLangEn />
+          <Route path="/panel-france">
+            <PanelFrance />
           </Route>
-          <Route path="/select-lang-de">
-            <SelectLangDe />
+          <Route path="/select-lang">
+            <SelectLang />
           </Route>
         </Switch>
       </div>

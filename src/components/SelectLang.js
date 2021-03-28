@@ -6,19 +6,19 @@ import Intro from "./Intro.js"
 import LanguageOptions from "./LanguageOptions"
 import Btn from "./Btn"
 //Graphics
-import en from "../assets/england.svg"
+import { ReactComponent as England } from "../assets/england.svg"
 
-function SelectLangEn() {
+function SelectLang() {
   return (
     <>
-      <Header language="en" cta="Need assistance" flag={en} />
-      <main className="select-lang-en">
+      <Header language="en" cta="Need assistance" flag={<England />} />
+      <main className="select-lang">
         <Intro title="Select Language" />
         <LanguageOptions />
-        <Btn text="english" />
+        <Btn text="Back" />
       </main>
     </>
   )
 }
 
-export default SelectLangEn
+export default SelectLang

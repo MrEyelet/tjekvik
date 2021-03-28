@@ -1,10 +1,11 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
-import gsap from "gsap"
 //Components
 import Logo from "./Logo.js"
 
 //Graphics
+// import { ReactComponent as England } from "../assets/england.svg"
+// import { ReactComponent as German } from "../assets/german.svg"
 import support from "../assets/support.svg"
 
 function Header(props) {
@@ -13,13 +14,17 @@ function Header(props) {
     const suffix = document.querySelector(".lang__suffix").textContent
     body.className = ""
     body.classList.add(suffix)
+    // console.log(props.flag)
+    // if (body.classList.contains("en")) {
+    //   flag = <England />
+    //   console.log(flag)
+    // } else {
+    //   flag = <German />
+    //   console.log(flag)
+    // }
   }
-  // useEffect(() => {
-  //   const tl = gsap.timeline({ defaults: { ease: "Power3.inOut" } })
-  //   tl.from(".gsap-appear-header", { duration: 0.75, opacity: 0, y: "-20px" })
-  // }, [])
   return (
-    <header className="header gsap-appear-header">
+    <header className="header">
       <div className="header__wrapper">
         <Logo />
         <div className="header__cta">
@@ -30,10 +35,8 @@ function Header(props) {
         </div>
       </div>
       <div className="lang">
-        <Link to="/select-lang-en" onClick={toggleClasses}>
-          <div className="lang__icon">
-            <img src={props.flag} alt="flag-icon" />
-          </div>
+        <Link to="/select-lang" onClick={toggleClasses}>
+          <div className="lang__icon">{props.flag}</div>
           <span className="lang__suffix">{props.language}</span>
         </Link>
       </div>

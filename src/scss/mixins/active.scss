@@ -1,0 +1,17 @@
+@mixin active {
+  .en & {
+    &.active-en {
+      @include hvr-state;
+    }
+  }
+  .de & {
+    &.active-de {
+      @include hvr-state;
+    }
+  }
+  .fr & {
+    &.active-fr {
+      @include hvr-state;
+    }
+  }
+}

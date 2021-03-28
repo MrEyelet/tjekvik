@@ -3,7 +3,7 @@
   text-align: center;
   &__title {
     position: relative;
-    transform: translatey(2rem);
+    transform: translatey(3rem);
     font-size: 8.5rem;
     margin: 2rem auto 0.5rem;
     line-height: 10rem;
@@ -23,7 +23,7 @@
     margin: 0rem auto 1.3rem;
     line-height: 5.5rem;
     position: relative;
-    transform: translatey(2rem);
+    transform: translatey(3rem);
     opacity: 0;
     will-change: transform;
 

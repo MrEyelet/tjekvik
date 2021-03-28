@@ -16,7 +16,7 @@
     @include portrait {
       font-size: 2rem;
     }
-    .select-lang-en & {
+    .select-lang & {
       margin: 0;
     }
   }
@@ -41,7 +41,7 @@
       width: 8.5rem;
       height: 10rem;
     }
-    .select-lang-en & {
+    .select-lang & {
       height: 16.5rem;
     }
     img {
