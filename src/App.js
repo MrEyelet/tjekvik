@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
-
 //Components
 import Preloader from "./components/Preloader.js"
 import Home from "./components/Home.js"
@@ -19,11 +18,10 @@ function App() {
   }, [])
   return (
     <BrowserRouter>
-      {loading ? (
-        <Preloader />
-      ) : (
-        // <PropagateLoader color={"red"} loading={loading} size={15} />
-        <div className="App">
+      <div className="App">
+        {loading ? (
+          <Preloader />
+        ) : (
           <Switch>
             <Route path="/" exact>
               <Home />
@@ -38,8 +36,8 @@ function App() {
               <SelectLang />
             </Route>
           </Switch>
-        </div>
-      )}
+        )}
+      </div>
     </BrowserRouter>
   )
 }
