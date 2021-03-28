@@ -2,10 +2,10 @@ import React from "react"
 
 function Preloader() {
   return (
-    <div class="preloader" aria-label="preloader screen">
-      <div class="preloader__outer-circle">
-        <div class="preloader__gap"></div>
-        <div class="preloader__inner-circle"></div>
+    <div className="preloader" aria-label="preloader screen">
+      <div className="preloader__outer-circle">
+        <div className="preloader__gap"></div>
+        <div className="preloader__inner-circle"></div>
       </div>
     </div>
   )
