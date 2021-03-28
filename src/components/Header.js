@@ -6,7 +6,7 @@ import Logo from "./Logo.js"
 import support from "../assets/support.svg"
 
 function Header(props) {
-  function toggleClasses() {
+  const toggleClasses = () => {
     const body = document.querySelector("body")
     const suffix = document.querySelector(".lang__suffix").textContent
     body.className = ""

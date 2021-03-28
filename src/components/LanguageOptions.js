@@ -14,7 +14,7 @@ function LanguageOptions() {
     const tl = gsap.timeline({ defaults: { ease: "Power3.inOut" } })
     tl.to(".gsap-appear-el", { duration: 0.75, opacity: 1, x: 0, stagger: 0.2 })
   })
-  function scrolltop() {
+  const scrolltop = () => {
     window.scrollTo(0, 0)
   }
   return (
