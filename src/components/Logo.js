@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 //Graphics
-import logo from "../assets/logo.png"
+import { ReactComponent as Tjekvik } from "../assets/logo-alt.svg"
 
 function Logo() {
   return (
     <Link to="/" className="logo">
-      <img src={logo} alt="logo" />
+      <Tjekvik />
     </Link>
   )
 }
