@@ -5,7 +5,7 @@
   text-align: center;
   width: 26.4rem;
   height: 7.4rem;
-  margin: 7.2rem auto 0;
+  margin: 7.2rem auto;
   padding: 0 2rem;
   border-radius: 7px;
   border: 2px solid $color-main;
@@ -16,9 +16,6 @@
   &:hover {
     background-color: transparent;
     color: $color-main;
-  }
-  @include portrait {
-    margin-bottom: 7rem;
   }
   @include phablet {
     margin-bottom: 4.5rem;
