@@ -14,4 +14,9 @@
       @include hvr-state;
     }
   }
+  .es & {
+    &.active-es {
+      @include hvr-state;
+    }
+  }
 }

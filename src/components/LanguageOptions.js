@@ -28,7 +28,7 @@ function LanguageOptions() {
       <Link className="link active-fr gsap-appear-el" to="/panel-france" onClick={scrolltop}>
         <Box icon={<France />} alt="england-flag" title="Français" paragraph="French" />
       </Link>
-      <Link className="link active-sp gsap-appear-el" to="/" onClick={scrolltop}>
+      <Link className="link active-es gsap-appear-el" to="/panel-spain" onClick={scrolltop}>
         <Box icon={<Spain />} alt="england-flag" title="Español" paragraph="Spanish" />
       </Link>
     </nav>

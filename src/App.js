@@ -5,6 +5,7 @@ import Preloader from "./components/Preloader.js"
 import Home from "./components/Home.js"
 import PanelGerman from "./components/PanelGerman.js"
 import PanelFrance from "./components/PanelFrance.js"
+import PanelSpain from "./components/PanelSpain.js"
 import SelectLang from "./components/SelectLang.js"
 import "./App.scss"
 
@@ -14,7 +15,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1000)
+    }, 1500)
   }, [])
   return (
     <BrowserRouter>
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route path="/panel-france">
               <PanelFrance />
+            </Route>
+            <Route path="/panel-spain">
+              <PanelSpain />
             </Route>
             <Route path="/select-lang">
               <SelectLang />
