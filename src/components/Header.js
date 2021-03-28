@@ -2,10 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 //Components
 import Logo from "./Logo.js"
-
 //Graphics
-// import { ReactComponent as England } from "../assets/england.svg"
-// import { ReactComponent as German } from "../assets/german.svg"
 import support from "../assets/support.svg"
 
 function Header(props) {
@@ -14,14 +11,6 @@ function Header(props) {
     const suffix = document.querySelector(".lang__suffix").textContent
     body.className = ""
     body.classList.add(suffix)
-    // console.log(props.flag)
-    // if (body.classList.contains("en")) {
-    //   flag = <England />
-    //   console.log(flag)
-    // } else {
-    //   flag = <German />
-    //   console.log(flag)
-    // }
   }
   return (
     <header className="header">

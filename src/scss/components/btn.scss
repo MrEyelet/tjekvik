@@ -13,9 +13,14 @@
   background-color: $color-main;
   text-decoration: none;
   transition: 0.25s ease-out;
-
   &:hover {
     background-color: transparent;
     color: $color-main;
+  }
+  @include portrait {
+    margin-bottom: 7rem;
+  }
+  @include phablet {
+    margin-bottom: 4.5rem;
   }
 }

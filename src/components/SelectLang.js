@@ -13,7 +13,7 @@ function SelectLang() {
     <>
       <Header language="en" cta="Need assistance" flag={<England />} />
       <main className="select-lang">
-        <Intro title="Select Language" />
+        <Intro title="Select language" />
         <LanguageOptions />
         <Btn text="Back" />
       </main>

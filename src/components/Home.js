@@ -5,7 +5,6 @@ import Intro from "./Intro.js"
 import ServiceOptions from "./ServiceOptions.js"
 import Footer from "./Footer.js"
 //Graphics
-import en from "../assets/england.svg"
 import { ReactComponent as England } from "../assets/england.svg"
 
 function Home() {

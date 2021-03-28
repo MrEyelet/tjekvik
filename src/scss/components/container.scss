@@ -2,7 +2,6 @@
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
   padding: 0 5.4rem;
   @include phablet {
     padding: 0 2rem;

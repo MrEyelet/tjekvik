@@ -9,6 +9,10 @@
     line-height: 10rem;
     opacity: 0;
     will-change: transform;
+    .select-lang & {
+      margin-top: 6.5rem;
+      margin-bottom: 4rem;
+    }
     @include portrait {
       font-size: 6.5rem;
       line-height: 8rem;
@@ -26,7 +30,6 @@
     transform: translatey(3rem);
     opacity: 0;
     will-change: transform;
-
     @include portrait {
       font-size: 3rem;
       line-height: 4rem;

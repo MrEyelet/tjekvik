@@ -14,18 +14,21 @@ function LanguageOptions() {
     const tl = gsap.timeline({ defaults: { ease: "Power3.inOut" } })
     tl.to(".gsap-appear-el", { duration: 0.75, opacity: 1, x: 0, stagger: 0.2 })
   })
+  function scrolltop() {
+    window.scrollTo(0, 0)
+  }
   return (
     <nav className="container">
-      <Link className="link active-en gsap-appear-el" to="/">
+      <Link className="link active-en gsap-appear-el" to="/" onClick={scrolltop}>
         <Box icon={<England />} alt="england-flag" title="English" paragraph="English" />
       </Link>
-      <Link className="link active-de gsap-appear-el" to="/panel-german">
+      <Link className="link active-de gsap-appear-el" to="/panel-german" onClick={scrolltop}>
         <Box icon={<German />} alt="german-flag" title="Deutsch" paragraph="German" />
       </Link>
-      <Link className="link active-fr gsap-appear-el" to="/panel-france">
+      <Link className="link active-fr gsap-appear-el" to="/panel-france" onClick={scrolltop}>
         <Box icon={<France />} alt="england-flag" title="Français" paragraph="French" />
       </Link>
-      <Link className="link active-sp gsap-appear-el" to="/">
+      <Link className="link active-sp gsap-appear-el" to="/" onClick={scrolltop}>
         <Box icon={<Spain />} alt="england-flag" title="Español" paragraph="Spanish" />
       </Link>
     </nav>
