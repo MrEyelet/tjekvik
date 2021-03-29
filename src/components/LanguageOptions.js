@@ -20,16 +20,16 @@ function LanguageOptions() {
   return (
     <nav className="container">
       <Link className="link active-en gsap-appear-el" to="/" onClick={scrolltop}>
-        <Box icon={<England />} alt="england-flag" title="English" paragraph="English" />
+        <Box icon={<England />} title="English" paragraph="English" />
       </Link>
       <Link className="link active-de gsap-appear-el" to="/panel-german" onClick={scrolltop}>
-        <Box icon={<German />} alt="german-flag" title="Deutsch" paragraph="German" />
+        <Box icon={<German />} title="Deutsch" paragraph="German" />
       </Link>
       <Link className="link active-fr gsap-appear-el" to="/panel-france" onClick={scrolltop}>
-        <Box icon={<France />} alt="england-flag" title="Français" paragraph="French" />
+        <Box icon={<France />} title="Français" paragraph="French" />
       </Link>
       <Link className="link active-es gsap-appear-el" to="/panel-spain" onClick={scrolltop}>
-        <Box icon={<Spain />} alt="england-flag" title="Español" paragraph="Spanish" />
+        <Box icon={<Spain />} title="Español" paragraph="Spanish" />
       </Link>
     </nav>
   )
