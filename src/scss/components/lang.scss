@@ -15,6 +15,12 @@
   @include phablet {
     width: 3.5rem;
   }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
   &__icon {
     width: 5.4rem;
     text-align: center;
@@ -30,11 +36,5 @@
     @include phablet {
       display: none;
     }
-  }
-  a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
   }
 }

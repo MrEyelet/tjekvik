@@ -1,13 +1,15 @@
 .box {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   padding: 2rem;
   border: 7px solid $color-main;
   border-radius: 5px;
+  background-color: $color-main;
   color: $color-white;
   text-align: center;
+  transition-delay: 0.35s;
   &__title {
     margin: 2.5rem auto 1rem;
     font-size: 4rem;
@@ -44,9 +46,6 @@
     .select-lang & {
       width: 14rem;
       height: 15.5rem;
-    }
-    img {
-      align-self: center;
     }
   }
 }

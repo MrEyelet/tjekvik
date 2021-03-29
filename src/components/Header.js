@@ -24,7 +24,7 @@ function Header(props) {
         </div>
       </div>
       <div className="lang">
-        <Link to="/select-lang" onClick={toggleClasses}>
+        <Link className="lang__link" to="/select-lang" onClick={toggleClasses}>
           <div className="lang__icon">{props.flag}</div>
           <span className="lang__suffix">{props.language}</span>
         </Link>

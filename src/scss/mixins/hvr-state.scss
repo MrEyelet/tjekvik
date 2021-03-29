@@ -2,6 +2,10 @@
   &::before {
     transform: scaleX(0);
   }
+  .box {
+    background-color: transparent;
+    transition-delay: 0ms;
+  }
   .box__title,
   .box__desc {
     color: $color-main;
