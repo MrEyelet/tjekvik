@@ -1,0 +1,46 @@
+.cta-ph {
+  width: 15.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    .cta-ph__vector {
+      transform: scale(1.1);
+    }
+  }
+  @include tablet {
+    width: auto;
+    font-size: 2.4rem;
+  }
+  @include portrait {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  @include phablet {
+    margin-right: 2rem;
+  }
+  &__icon {
+    width: 4rem;
+    margin: 0 auto;
+  }
+  &__vector {
+    transition: 0.25s transform ease-in-out;
+  }
+  &__text {
+    margin: 0;
+    color: $color-white;
+    text-decoration: none;
+    @include portrait {
+      margin-left: 1rem;
+    }
+    @include phablet {
+      display: none;
+    }
+  }
+  svg {
+    overflow: visible;
+  }
+}

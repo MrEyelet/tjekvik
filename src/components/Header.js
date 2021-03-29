@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 //Components
 import Logo from "./Logo.js"
 //Graphics
-import support from "../assets/support.svg"
+import { ReactComponent as Support } from "../assets/support.svg"
 
 function Header(props) {
   function toggleClasses() {
@@ -16,12 +16,12 @@ function Header(props) {
     <header className="header">
       <div className="header__wrapper">
         <Logo />
-        <div className="header__cta">
-          <div className="header__cta-icon">
-            <img src={support} alt="support-icon" />
+        <a href="tel:123456789" className="cta-ph">
+          <div className="cta-ph__icon">
+            <Support />
           </div>
-          <p className="header__cta-text">{props.cta}?</p>
-        </div>
+          <p className="cta-ph__text">{props.cta}?</p>
+        </a>
       </div>
       <div className="lang">
         <Link className="lang__link" to="/select-lang" onClick={toggleClasses}>
