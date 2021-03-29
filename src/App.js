@@ -16,6 +16,7 @@ function App() {
     setTimeout(() => {
       setLoading(false)
     }, 1500)
+    window.scrollTo(0, 0)
   }, [])
   return (
     <BrowserRouter>
