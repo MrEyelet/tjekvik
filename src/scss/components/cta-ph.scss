@@ -11,7 +11,7 @@
     }
   }
   @include tablet {
-    width: auto;
+    min-width: auto;
     font-size: 2.4rem;
   }
   @include portrait {
