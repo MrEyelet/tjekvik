@@ -11,7 +11,7 @@ function PanelGerman() {
   return (
     <>
       <Header language="es" cta="Necesita ayuda" flag={<Spain />} />
-      <main className="france">
+      <main className="spain">
         <Intro title="Nombre De Terminal" subtitle="Bienvenida a la estacion de servicio" />
         <ServiceOptions title="sin cita" checkIn="Trae El Vehículo" checkOut="Obtener el vehículo" withoutCheck="Trae El Vehículo" />
       </main>
